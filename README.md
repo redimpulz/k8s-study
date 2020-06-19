@@ -1,5 +1,4 @@
 # Kubernetes上にLaravelをデプロイしよう
 
-このリポジトリはyoutubeの「Kubernetes上にLaravelをデプロイしよう」
-の教材用リポジトリです  
-https://www.youtube.com/embed/2di383siRK8
+このリポジトリはyoutubeの「Kubernetes上にLaravelをデプロイしよう」の教材用リポジトリです  
+https://youtu.be/2di383siRK8
