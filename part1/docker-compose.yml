@@ -1,0 +1,23 @@
+version: "2"
+
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: ./nginx/Dockerfile
+    ports:
+      - 8088:80
+    links:
+      - phpfpm
+    depends_on:
+      - phpfpm
+    networks:
+      - my_network
+  phpfpm:
+    build:
+      context: .
+      dockerfile: ./phpfpm/Dockerfile
+    networks:
+      - my_network
+networks:
+  my_network:
