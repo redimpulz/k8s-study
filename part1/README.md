@@ -2,7 +2,7 @@
 
 ## 実行方法
 
-```
+```sh
 # Dockerの立ち上げ
 docker-compose up
 
