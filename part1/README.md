@@ -4,9 +4,9 @@
 
 ```sh
 # Dockerの立ち上げ
-docker-compose up
+docker-compose up -d
 
-# Aprication key の発行
+# Application Key の発行
 docker-compose exec phpfpm php artisan key:generate
 ```
 
