@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: laravel-deployment
+  labels:
+    app: laravel
+spec:
+  replicas: 2
+  template:
+    metadata:
+      name: laravel
+      labels:
+        app: laravel
+    spec:
+      containers:
+        - name: nginx
+          image: redimpulz/nginx:part2
+          ports:
+            - containerPort: 80
+          imagePullPolicy: IfNotPresent
+        - name: php
+          image: redimpulz/phpfpm:part2
+          ports:
+            - containerPort: 9000
+          imagePullPolicy: Always
+      restartPolicy: Always
+  selector:
+    matchLabels:
+      app: laravel
