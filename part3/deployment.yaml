@@ -14,12 +14,12 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: gcr.io/kube-study-279414/nginx
+          image: gcr.io/プロジェクトID/nginx
           ports:
             - containerPort: 80
           imagePullPolicy: IfNotPresent
         - name: php
-          image: gcr.io/kube-study-279414/phpfpm
+          image: gcr.io/プロジェクトID/phpfpm
           ports:
             - containerPort: 9000
           imagePullPolicy: Always
